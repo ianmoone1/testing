@@ -3,7 +3,7 @@
 /**
  * @file
  * Default theme implementation to display the basic html structure of a single
- * Drupal page. test automation
+ * Drupal page. test automation now?
  *
  * Variables:
  * - $css: An array of CSS files for the current page.
