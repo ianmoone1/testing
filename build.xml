@@ -65,15 +65,6 @@
   </exec>
  </target>
 
- <target name="phpmd-ci" description="Perform project mess detection using PHPMD creating a log file for the continuous integration server">
-  <exec executable="phpmd">
-   <arg path="${basedir}/src" />
-   <arg value="xml" />
-   <arg value="${basedir}/build/phpmd.xml" />
-   <arg value="--reportfile" />
-   <arg value="${basedir}/build/logs/pmd.xml" />
-  </exec>
- </target>
 
  <target name="phpcs"
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
@@ -98,10 +89,6 @@
    <arg value="${basedir}/build/logs/pmd-cpd.xml" />
    <arg path="${basedir}/src" />
   </exec>
- </target>
-
- <target name="phpdox" description="Generate API documentation using phpDox">
-  <exec executable="phpdox"/>
  </target>
 
  <target name="phpunit" description="Run unit tests with PHPUnit">
